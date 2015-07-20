@@ -10,6 +10,14 @@ Make sure your JAVA_HOME is pointing to the Java 8 installation (root directory)
 Windows: SET JAVA_HOME=c:\\Prog
 Mac/Linux: export JAVA_HOME=/usr/
 
+#
+cd shared
+mvn install
+
+# generate exercises
+cd ../solutions
+mvn clean install -P create_exercises -DskipTests=true
+
 ## Coding
 
 The exercises can be found in the exercises project, you only need to change source code in src/main/java.
