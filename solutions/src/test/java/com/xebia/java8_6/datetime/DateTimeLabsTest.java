@@ -22,7 +22,7 @@ public class DateTimeLabsTest {
 
     @Test
     public void ageCalculator() {
-        assertThat(calculateAge(LocalDate.of(1980, Month.FEBRUARY, 1)), Matchers.startsWith("34 years"));
+        assertThat(calculateAge(LocalDate.of(1980, Month.FEBRUARY, 1)), Matchers.startsWith("35 years"));
     }
 
     @Test
